@@ -1,0 +1,79 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='/css.css')
+  script(defer='' src='/java.js')
+  title round of 16
+body.home_page
+  ul.navBar
+    li.navBarItem
+      a.navBarLink(href='/home.pug') home
+    li.navBarItem
+      a.navBarLink(href='/views/page1.pug') my predictions
+    li.navBarItem
+      a.navBarLink(href='/myTable.pug') my table
+    li.navBarItem
+      a.navBarLink(href='/live_result.pug') live result
+
+  h1 round of 16
+  form#knockout_level.cards(action='/insert' method='post')
+    center
+      .eighth-1.card
+        h1.headLN xxx vs yyy
+        select#pass.field_class(name='knockout1')
+          option(value='choose') choose
+          option#161(value='1')
+          option#161b(value='2')
+    center
+      .eighth-2.card
+        h1.headLN xxx vs yyy
+        select#pass.field_class(name='knockout2')
+          option(value='choose') choose
+          option(value='1') netherland
+          option(value='2') sanegal
+    center
+      .eighth-3.card
+        h1.headLN xxx vs yyy
+        select#pass.field_class(name='knockout3')
+          option(value='choose') choose
+          option(value='1') netherland
+          option(value='2') sanegal
+    center
+      .eighth-4.card
+        h1.headLN xxx vs yyy
+        select#pass.field_class(name='knockout4')
+          option(value='choose') choose
+          option(value='1') netherland
+          option(value='2') sanegal
+    center
+      .eighth-5.card
+        h1.headLN xxx vs yyy
+        select#pass.field_class(name='knockout5')
+          option(value='choose') choose
+          option(value='1') netherland
+          option(value='2') sanegal
+    center
+      .eighth-6.card
+        h1.headLN xxx vs yyy
+        select#pass.field_class(name='knockout6')
+          option(value='choose') choose
+          option(value='1') netherland
+          option(value='2') sanegal
+    center
+      .eighth-7.card
+        h1.headLN xxx vs yyy
+        select#pass.field_class(name='knockout7')
+          option(value='choose') choose
+          option(value='1') netherland
+          option(value='2') sanegal
+    center
+      .eighth-8.card
+        h1.headLN xxx vs yyy
+        select#pass.field_class(name='knockout8')
+          option(value='choose') choose
+          option(value='1') netherland
+          option(value='2') sanegal
+  a(href='/quatrer.pug')
+    button.quatrer_level to quarter

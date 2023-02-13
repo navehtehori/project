@@ -1,0 +1,50 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='/css.css')
+  script(defer='' src='/java.js')
+  title quatrer level
+body.home_page 
+  ul.navBar
+    li.navBarItem
+      a.navBarLink(href='/home.pug') home
+    li.navBarItem
+      a.navBarLink(href='/page1.pug') my predictions
+    li.navBarItem
+      a.navBarLink(href='/myTable.pug') my table
+    li.navBarItem
+      a.navBarLink(href='/live_result.pug') live result
+  h1 quarter final
+  form#quatrer_level.cards(action='/insert' method='post')
+    center
+      .eighth-1.card
+        h1.headLN xxx vs yyy
+        select#pass.field_class(name='quatrer1')
+          option(value='choose') choose
+          option(value='1') netherland
+          option(value='2') sanegal
+    center
+      .eighth-2.card
+        h1.headLN xxx vs yyy
+        select#pass.field_class(name='quatrer2')
+          option(value='choose') choose
+          option(value='1') netherland
+          option(value='2') sanegal
+    center
+      .eighth-3.card
+        h1.headLN xxx vs yyy
+        select#pass.field_class(name='quatrer3')
+          option(value='choose') choose
+          option(value='1') netherland
+          option(value='2') sanegal
+    center
+      .eighth-4.card
+        h1.headLN xxx vs yyy
+        select#pass.field_class(name='quatrer4')
+          option(value='choose') choose
+          option(value='1') netherland
+          option(value='2') sanegal
+  a(href='/semi.pug')
+    button.quatrer_level to semi-final

@@ -10,3 +10,9 @@ const navLinks = document.querySelectorAll('.navBarItem a').forEach(link=> {
    }
 }
     );
+
+
+    function myFunction() {
+      var x = document.getElementById("home11").value;
+      document.getElementById("161").innerHTML =  x;
+    }

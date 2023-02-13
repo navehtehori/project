@@ -1,0 +1,174 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='/css.css')
+  script(defer='' src='/java.js')
+  title group stage
+body.home_page
+  ul.navBar
+    li.navBarItem
+      a.navBarLink(href='/home.pug') home
+    li.navBarItem
+      a.navBarLink(href='/views/page1.pug') my predictions
+    li.navBarItem
+      a.navBarLink(href='/myTable.pug') my table
+    li.navBarItem
+      a.navBarLink(href='/live_result.pug') live result
+  h1 group stage
+  form#homes_level.cards(action='/insert' method='post')
+    center
+      .home1.card
+        h1.headLN group 1
+        h6 first team
+        select#home11.field_class(name='home1place1' )
+          | choose
+          option(value='1') netherland
+          option(value='2') sanegal
+          option(value='3') equador
+          option(value='4') quatar
+        button(type='submit') Submit
+        h6 second team
+        select#home12.field_class(name='home1place2')
+          | choose
+          option(value='1') netherland
+          option(value='2') sanegal
+          option(value='3') equador
+          option(value='4') quatar
+        button(type='submit') Submit
+    center
+      .home2.card
+        h1.headLN group 2
+        h6 first team
+        select#home21.field_class(name='home2place1')
+          option(value='choose') choose
+          option(value='1') england
+          option(value='2') usa
+          option(value='3') iran
+          option(value='4') wales
+        button(type='submit') Submit
+        h6 second team
+        select#home22.field_class(name='home2place2')
+          option(value='choose') choose
+          option(value='1') england
+          option(value='2') usa
+          option(value='3') iran
+          option(value='4') wales
+        button(type='submit') Submit
+    center
+      .home3.card
+        h1.headLN group 3
+        h6 first team
+        select#home31.field_class(name='home3place1')
+          option(value='choose') choose
+          option(value='1') argentina
+          option(value='2') poland
+          option(value='3') mexico
+          option(value='4') saudi arab
+        button(type='submit') Submit
+        h6 second team
+        select#home32.field_class(name='home3place2')
+          option(value='choose') choose
+          option(value='1') argentina
+          option(value='2') poland
+          option(value='3') mexico
+          option(value='4') saudi arab
+        button(type='submit') Submit
+    center
+      .home4.card
+        h1.headLN group 4
+        h6 first team
+        select#home41.field_class(name='home4place1')
+          option(value='choose') choose
+          option(value='1') france
+          option(value='2') australia
+          option(value='3') tunis
+          option(value='4') denemark
+        button(type='submit') Submit
+        h6 second team
+        select#home42.field_class(name='home2place2')
+          option(value='choose') choose
+          option(value='1') france
+          option(value='2') australia
+          option(value='3') tunis
+          option(value='4') denemark
+        button(type='submit') Submit
+    center
+      .home5.card
+        h1.headLN group 5
+        h6 first team
+        select#home51.field_class(name='home5place1')
+          option(value='choose') choose
+          option(value='1') japan
+          option(value='2') spain
+          option(value='3') germany
+          option(value='4') costa rica
+        button(type='submit') Submit
+        h6 second team
+        select#home52.field_class(name='home5place2')
+          option(value='choose') choose
+          option(value='1') japan
+          option(value='2') spain
+          option(value='3') germany
+          option(value='4') costa rica
+        button(type='submit') Submit
+    center
+      .home6.card
+        h1.headLN group 6
+        h6 first team
+        select#home61.field_class(name='home6place1')
+          option(value='choose') choose
+          option(value='1') morocco
+          option(value='2') croatia
+          option(value='3') belgium
+          option(value='4') canada
+        button(type='submit') Submit
+        h6 second team
+        select#home62.field_class(name='home6place2')
+          option(value='choose') choose
+          option(value='1') morocco
+          option(value='2') croatia
+          option(value='3') belgium
+          option(value='4') canada
+        button(type='submit') Submit
+    center
+      .home7.card
+        h1.headLN group 7
+        h6 first team
+        select#home71.field_class(name='home7place1')
+          option(value='choose') choose
+          option(value='1') brazil
+          option(value='2') switzerland
+          option(value='3') cameroon
+          option(value='4') serbia
+        button(type='submit') Submit
+        h6 second team
+        select#home72.field_class(name='home7place2')
+          option(value='choose') choose
+          option(value='1') brazil
+          option(value='2') switzerland
+          option(value='3') cameroon
+          option(value='4') serbia
+        button(type='submit') Submit
+    center
+      .home8.card
+        h1.headLN group 8
+        h6 first team
+        select#home81.field_class(name='home8place1')
+          option(value='choose') choose
+          option(value='1') portugal
+          option(value='2') south korea
+          option(value='3') uruguay
+          option(value='4') gana
+        button(type='submit') Submit
+        h6 second team
+        select#home82.field_class(name='home8place2')
+          option(value='choose') choose
+          option(value='1') portugal
+          option(value='2') south korea
+          option(value='3') uruguay
+          option(value='4') gana
+        button(type='submit') Submit
+  a(href='/knockout.pug' action='/insert')
+    button.knockout_level to knockout level

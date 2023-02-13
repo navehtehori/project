@@ -1,0 +1,102 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title live result
+  link(rel='stylesheet' href='/css.css')
+  script(defer='' src='/java.js')
+body.home_page
+  ul.navBar
+    li.navBarItem
+      a.navBarLink(href='/home.pug') home
+    li.navBarItem
+      a.navBarLink(href='/page1.pug') my predictions
+    li.navBarItem
+      a.navBarLink(href='/myTable.pug') my table
+    li.navBarItem
+      a.navBarLink(href='/live_result.pug') live result
+  h1 live result
+  .round.r-of-4
+    .bracket-game
+      .player.top.win
+        | group 1A
+      .player.bot.loss
+        | group 2B
+    .bracket-game.cont
+      .player.top.loss
+        | group 1C
+      .player.bot.win
+        | group 2D
+    .bracket-game.cont
+      .player.top.loss
+        | group 1E
+      .player.bot.win
+        | group 2F
+    .bracket-game.cont
+      .player.top.loss
+        | group 1G
+      .player.bot.win
+        | group 2H
+    .bracket-game.cont
+      .player.top.loss
+        | group 1B
+      .player.bot.win
+        | group 2A
+    .bracket-game.cont
+      .player.top.loss
+        | group 1D
+      .player.bot.win
+        | group 2C
+    .bracket-game.cont
+      .player.top.loss
+        | group 1F
+      .player.bot.win
+        | group 2E
+    .bracket-game.cont
+      .player.top.loss
+        | group 1H
+      .player.bot.win
+        | group 2G
+  .round.r-of-2
+    .bracket-game
+      .player.top.loss
+        | group
+      .player.bot.win
+        | group
+  .round.r-of-22
+    .bracket-game
+      .player.top.loss
+        | group
+      .player.bot.win
+        | group
+  .round.r-of-23
+    .bracket-game
+      .player.top.loss
+        | group
+      .player.bot.win
+        | group
+  .round.r-of-24
+    .bracket-game
+      .player.top.loss
+        | group
+      .player.bot.win
+        | group
+  .semi-final
+    .bracket-game
+      .player.top.loss
+        | group
+      .player.bot.win
+        | group
+  .semi-final2
+    .bracket-game
+      .player.top.loss
+        | group
+      .player.bot.win
+        | group
+  .final
+    .bracket-game
+      .player.top.loss
+        | group
+      .player.bot.win
+        | group

@@ -1,0 +1,29 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='/css.css')
+  script(defer='' src='/static/java.js')
+  title final
+body.home_page
+  ul.navBar
+    li.navBarItem
+      a.navBarLink(href='/home.pug') home
+    li.navBarItem
+      a.navBarLink(href='/page1.pug') my predictions
+    li.navBarItem
+      a.navBarLink(href='/myTable.pug') my table
+    li.navBarItem
+      a.navBarLink(href='/live_result.pug') live result
+  h1 final
+  center
+    form#homes_level.eighth-1.card(action='/insert' method='post')
+      h1.headLN xxx vs yyy
+      select#pass.field_class(name='final')
+        option(value='choose') choose
+        option(value='1') netherland
+        option(value='2') sanegal
+  center
+    a.cup_im(href='/home.pug')
+      img(src='/cup4.png' height='100px')

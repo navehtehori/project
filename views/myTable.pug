@@ -1,0 +1,42 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title MyTable
+  link(rel='stylesheet' href='/css.css')
+  script(defer='' src='/java.js')
+body.home_page
+  ul.navBar
+    li.navBarItem
+      a.navBarLink(href='/home.pug') home
+    li.navBarItem
+      a.navBarLink(href='/page1.pug') my predictions
+    li.navBarItem
+      a.navBarLink(href='/myTable.pug') my table
+    li.navBarItem
+      a.navBarLink(href='/live_result.pug') live result
+  h1 leadboard
+  h2 league name: Nihulma 187
+  table
+    tr
+      th name
+      th points
+    tr
+      td Naveh Tehori
+      td JSON.stringify(res) 
+    tr
+      td Yahel Habot
+      td 135
+    tr
+      td Michael Itzhaki
+      td 120
+    tr
+      td Ran Skorchero
+      td 115
+    tr
+      td Idan Zohar
+      td 100
+    tr
+      td Gilad Gery
+      td 80

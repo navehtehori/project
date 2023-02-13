@@ -1,0 +1,43 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title home
+  link(rel='stylesheet' href='/css.css')
+  script(defer='' src='/java.js')
+body.home_page
+  ul.navBar
+    li.navBarItem
+      a.navBarLink(href='/home.pug') home
+    li.navBarItem
+      a.navBarLink(href='/page1.pug') my predictions
+    li.navBarItem
+      a.navBarLink(href='/myTable.pug') my table
+    li.navBarItem
+      a.navBarLink(href='/live_result.pug') live result
+  h1 world cup
+  br
+  br
+  section.packages
+    center
+      .box-container
+        .box
+          .image
+            a(href='/page1.pug')
+              img(src='https://photo.one.co.il/Image/GG/2,1/1654409.webp')
+
+          .content
+            h3  predict
+        .box
+          .image.i1
+            a(href='/myTable.pug')
+              img(src='https://e0.365dm.com/20/04/2048x1152/skysports-world-cup-fifa-trophy_4964174.jpg')
+          .content
+            h3 leadboard
+        .box
+          .image
+            a(href='/live_result.pug')
+              img(src='https://www.sportmonks.com/wp-content/uploads/2022/06/Tournament-Tree-3.png' )
+          .content
+            h3 live result

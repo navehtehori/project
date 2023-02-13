@@ -1,0 +1,3 @@
+INSERT INTO RealResault (home1place1, home1place2, home2place1, home2place2, home3place1, home3place2, home4place1, home4place2, home5place1, home5place2, home6place1, home6place2, home7place1, home7place2, home8place1, home8place2, knockout1, knockout2, knockout3, knockout4, knockout5, knockout6, knockout7, knockout8, quatrer1, quatrer2 ,quatrer3 ,quatrer4 ,  semi1, semi2, final) 
+VALUES ('netherland', 'sanegal', 'england', 'usa', 'argentina', 'poland', 'france', 'australia', 'japan', 'spain', 'morocco', 'croatia', 'brazil', 'switzerland', 'portugal', 'south_korea', 'netherland','argentina', 'croatia', 'brazil', 'france', 'england', 'morocco', 'portugal', 'argentina', 'croatia', 'france', 'morocco', 'argentina', 'france', 'argentina');
+

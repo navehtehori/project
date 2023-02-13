@@ -4,28 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mondial</title>
+    <title>world cup</title>
     <link rel="stylesheet" href="../static/css.css">
+    <script defer src="../static/java.js"></script>
 </head>
 <body>
     <body>
         <header>
-            <h1>mondial</h1>
+            <h1>world cup</h1>
         </header>
         <main>
-            <form id="login_form" class="form_class" action="login/login-access.php" method="post">
+            <form id="login_form" class="form_class" action="/insert" method="post">
                 <div class="form_div">
                     <label>user name:</label>
-                    <input class="field_class" name="login_txt" type="text" >
-                    <label>league code:</label>
-                    <input id="pass" class="field_class" name="password_txt" type="password">
+                    <input class="field_class" name="login_txt" type="text">
+                    <label>league name:</label> 
+                    <!--הקבוצות יהיו לפי מי שיכניס את אותו שם הליגה  כלומר כל הליגות באותו טבלה בדטה בייס-->
+                    <input id="pass" class="field_class" name="league_txt" type="password">
                 </div>
                 <a href="">
                     <button class="submit_class"> sign in</button>
                 </a>
-                <div class="info_div">
-                    <p>new guest?<a href="./create_league.html">create new league</a></p>
-                </div>
             </form>
         </main>
         <footer>

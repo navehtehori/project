@@ -1,0 +1,23 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title world cup
+  link(rel='stylesheet' href='/css.css')
+  script(defer='' src='/java.js')
+body.home_page
+  header
+    h1 world cup
+  main
+    form#login_form.form_class(action='/form' method='post')
+      .form_div
+        label user name:
+        input.field_class(name='login_txt' type='text')
+        label league name:
+        // הקבוצות יהיו לפי מי שיכניס את אותו שם הליגה  כלומר כל הליגות באותו טבלה בדטה בייס
+        input#pass.field_class(name='league_txt' type='text')
+      a(href='/home.pug')
+         button.submit_class  sign in
+  footer
+    | @powered by Naveh Tehori
